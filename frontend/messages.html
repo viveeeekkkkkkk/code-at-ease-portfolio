@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Vivek Sharma Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Vivek Sharma</a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="messages.html" class="nav-link active">Messages</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Messages Section -->
+    <section class="messages-section section-padding">
+        <div class="container">
+            <h1 class="section-title">Contact Messages</h1>
+            <p class="section-subtitle">All messages received through the contact form</p>
+            
+            <div class="messages-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search messages...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button id="refreshBtn" class="btn btn-primary">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+            
+            <div class="messages-container">
+                <div class="messages-header">
+                    <div class="message-count">
+                        <i class="fas fa-envelope"></i>
+                        <span id="messageCount">Loading...</span> Messages
+                    </div>
+                    <div class="messages-stats">
+                        <span class="stat-item"><i class="fas fa-clock"></i> Latest First</span>
+                    </div>
+                </div>
+                
+                <div id="messagesList" class="messages-list">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading messages...</p>
+                    </div>
+                </div>
+                
+                <div class="no-messages" id="noMessages" style="display: none;">
+                    <i class="fas fa-inbox"></i>
+                    <h3>No Messages Yet</h3>
+                    <p>No contact messages have been received yet.</p>
+                    <a href="index.html#contact" class="btn btn-primary">Go to Contact Form</a>
+                </div>
+            </div>
+            
+            <div class="messages-actions">
+                <button id="deleteAllBtn" class="btn btn-danger" style="display: none;">
+                    <i class="fas fa-trash"></i> Delete All Messages
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html?scroll=contact">Contact Form</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/codes-viveksharma" target="_blank" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/viveksharma262005/" target="_blank" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/" target="_blank" class="social-icon" title="X (Twitter)">
+                            <span class="x-text">𝕏</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:codes.viveksharma@gmail.com">codes.viveksharma@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+917006356523">+91 70063 56523</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Vivek Sharma. All Rights Reserved.</p>
+                <p>Made for Mission Code-at-4 | Hacktropica & Robotics Club, AEC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/messages.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
