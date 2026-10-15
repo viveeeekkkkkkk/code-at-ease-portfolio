@@ -21,3 +21,8 @@ Learning how to contribute to projects using GitHub.
 - Creating feature branches
 - Reviewing changes
 - Merging pull requests
+
+
+## GitHub Practice
+
+Learning how to use branches and pull requests.
