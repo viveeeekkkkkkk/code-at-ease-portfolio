@@ -1,1 +1,15 @@
 
+# My GitHub Practice Repository
+
+This repository is for learning Git and GitHub.
+
+## What I'm Learning
+
+- Git and GitHub
+- Branches and pull requests
+- Commits and merging
+- Open-source collaboration
+
+## Goal
+
+Learning how to contribute to projects using GitHub.
