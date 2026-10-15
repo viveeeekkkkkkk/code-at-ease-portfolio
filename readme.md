@@ -13,3 +13,11 @@ This repository is for learning Git and GitHub.
 ## Goal
 
 Learning how to contribute to projects using GitHub.
+
+
+## Skills I'm Practicing
+
+- Writing clear documentation
+- Creating feature branches
+- Reviewing changes
+- Merging pull requests
