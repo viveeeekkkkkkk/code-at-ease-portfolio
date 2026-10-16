@@ -23,6 +23,7 @@ Learning how to contribute to projects using GitHub.
 - Merging pull requests
 
 
-## GitHub Practice
+## GitHub Workflow
 
-Learning how to use branches and pull requests.
+This project demonstrates how to use GitHub branches,
+commits, pull requests, and merges.
